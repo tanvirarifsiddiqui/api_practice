@@ -17,4 +17,8 @@ class Task extends Model
         "due_date",
         "priority"
     ];
+    protected $casts = [
+        'due_date' => 'date:Y-m-d', //Very Important And Circuital
+    ];
 }
+

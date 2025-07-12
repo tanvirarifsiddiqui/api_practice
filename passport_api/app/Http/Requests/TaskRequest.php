@@ -25,7 +25,7 @@ class TaskRequest extends FormRequest
             'title'       => 'required|string|max:255',
             'description' => 'nullable|string',
             'status'      => 'in:pending,in_progress,completed',
-            'due_date'    => 'nullable|date',
+            'due_date'    => 'nullable|date_format:Y-m-d',   // enforce date format
             'priority'    => 'nullable|integer|min:1',
         ];
 
